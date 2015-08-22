@@ -1,35 +1,6 @@
-/* app css stylesheet */
-
-
-h1{
-  font-family: 'Cabin', sans-serif;
-  font-size: 56px;
+body {
+  padding-top: 50px;
 }
-
-p {
-  font-family: 'Cabin', sans-serif;
-}
-
-.info-container {
-  float: left;
-  clear: left;
-  display: block;
-  height: 400px;
-}
-
-#top-shadow {
-position: fixed;
-top: 0;
-left: 20px;
-width: 100%;
-height: 42px;
-z-index: 999;
--webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
--moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-display: none;
-}
-
 
 .navbar {
   height: 65px;
@@ -40,77 +11,25 @@ display: none;
   z-index:1000;
 }
 
-.slide-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.byetext {
-  background-color: #5F64D6;
-  height: 300px;
-  display: block;
-}
-
-.evan-info {
-  display: block;
-}
-
-.text-center {
-  height: 300px;
-  padding-top: 75px;
-
-}
-
-.first-divider {
-  height: 400px;
-  background-color: #5D5CDC;
-  left: -20px;
-  right: -20px;
-  padding: 0 20px;
-  position: absolute;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 .icon-bar {
    background-color:#FF0000 !important;
 }
+
+#bs-example-navbar-collapse-1 {
+  background-color: white;
 }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
 
-.menu:before {
-  content: "[";
-}
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('/fonts/gotham-book/gotham-book-webfont.eot');
+    src: url('/fonts/gotham-book/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/gotham-book/gotham-book-webfont.woff2') format('woff2'),
+         url('/fonts/gotham-book/gotham-book-webfont.woff') format('woff'),
+         url('/fonts/gotham-book/gotham-book-webfont.ttf') format('truetype'),
+         url('/fonts/gotham-book/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
-
-.btn {
-    border-radius: 0px;
 }

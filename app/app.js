@@ -5,6 +5,12 @@ var so = angular.module('so', [
     'ui.bootstrap',
     'so.home',
     'so.auth',
+    'so.life',
+    'so.about',
+    'so.cool',
+    'so.projects',
+    'so.videos',
+    'so.contact',
     'AuthService',
     'so.private'
 ]);

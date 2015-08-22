@@ -10,8 +10,9 @@
 
     <!-- CSS (load bootstrap) -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="app.css">
-    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <style>
         .navbar { border-radius:0; }
     </style>
@@ -21,7 +22,6 @@
 <!-- apply our angular app to our site -->
 <body ng-app="so">
 
-<!-- NAVIGATION -->
 <nav class="navbar navbar navbar-fixed-top sticky" role="navigation">
   <div class="container-fluid" ng-controller="soCtrl">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,7 +32,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" ui-sref="soHome">Adwolla</a>
+        <a class="navbar-brand" ui-sref="soHome" style="font-family: gotham_bookregular">Daniel Gaeta</a>
     </div>
 
 
@@ -40,24 +40,21 @@
     <div collapse="navCollapsed" class="collapse nav-collapse navbar-collapse navbar-responsive-collapse" ng-class="{'in': !navCollapsed}" id="bs-example-navbar-collapse-1" ng-click="navCollapsed=true">
       <ul class="nav navbar-nav">
         <li><a  ui-sref="soHome">Home</a></li>
-        <li><a  ui-sref="soAuthRegistration" ng-hide="authData">Brand Register</a></li>
-        <li><a  ui-sref="soAuthLogin" ng-hide="authData">Brand Login</a></li>
-        <li><a  ui-sref="soAuthSocial" ng-hide="authData">User Signin</a></li>
-        <!-- <li><a  ui-sref="home" ng-hide="!authData" ng-click="">Logout</a></li> -->
-        <li><a  ui-sref="soPrivate" ng-show="authData">Private</a></li>
-        <li><a  ui-sref="soHome" ng-show="authData" ng-click="logout()">Log Out</a></li>
+        <li><a  ui-sref="soLife">Life</a></li>
+        <li><a  ui-sref="soAbout">About</a></li>
+        <li><a  ui-sref="soProjects">Project</a></li>
+        <li><a  ui-sref="soVideos">Videos</a></li>
+        <li><a  ui-sref="soCool">Cool</a></li>
+        <li><a  ui-sref="soContact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- MAIN CONTENT -->
-<div class="container">
 
-    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-    <div ui-view></div>
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div ui-view></div>
 
-</div>
 
 
   <!-- In production use:
@@ -77,6 +74,12 @@
 
   <!-- Misc -->
   <script src="components/home/home.module.js"></script>
+  <script src="components/life/life.module.js"></script>
+  <script src="components/cool/cool.module.js"></script>
+  <script src="components/about/about.module.js"></script>
+  <script src="components/projects/projects.module.js"></script>
+  <script src="components/videos/videos.module.js"></script>
+  <script src="components/contact/contact.module.js"></script>
   <script src="components/private/private.module.js"></script>
 
   <!-- Auth -->
