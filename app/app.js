@@ -25,8 +25,6 @@ so.controller("soCtrl", ["$scope", "AuthService",
 
         AuthService.$onAuth(function(authData) {
           $scope.authData = authData;
-          console.log("Hellooooo out there");
-          console.log(authData);
         });
 
         $scope.logout = function() {
@@ -34,9 +32,9 @@ so.controller("soCtrl", ["$scope", "AuthService",
             console.log("in here");
 
             AuthService.$unauth(function(authData) {
-                if (!authData) {
-                    console.log("logged out");
-                };
+                // if (!authData) {
+                //     console.log("logged out");
+                // };
             })
         }
 
