@@ -1,9 +1,6 @@
 angular
     .module('so.auth', [
-        'ui.router',
-        'so.auth.registration',
-        'so.auth.social',
-        'so.auth.login',
+        'ui.router'
     ])
     .config(function($stateProvider) {
         $stateProvider
