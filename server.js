@@ -18,5 +18,5 @@
     app.use(methodOverride());
 
     // listen (start app with node server.js) ======================================
-    app.listen(8020);
+    app.listen(8000);
     console.log("App listening on port 8000");
